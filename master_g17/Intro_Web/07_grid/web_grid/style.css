@@ -1,0 +1,63 @@
+body{
+    font-family:Arial, Helvetica, sans-serif
+    margin: 0;
+}
+
+header{
+    grid-area: header;
+    background-color: crimson;
+    color:azure;
+}
+
+nav{
+    grid-area: menu;
+    background-color:aquamarine;
+    /*color:azure;*/
+}
+
+main{
+    grid-area: menu;
+    background-color: darkturquoise;
+    color:aliceblue;
+}
+
+footer{
+    grid-area: footer;
+    background-color: azure;
+    color:black;
+}
+
+.right{
+    grid-area: right;
+    background-color: antiquewhite;
+    color:beige;
+}
+
+.general{
+    text-align: center;
+    padding: 20px 10px;
+    align-items: center;
+}
+
+.chuvaca{
+    grid-area: chuvaca;
+
+    text-align: right;
+
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: none
+    'header header header header header header header header'
+    'menu menu main main main main right right'
+    'menu menu main main main main right right'
+    'chuvaca chuvaca chuvaca chuvaca chuvaca chuvaca chuvaca chuvaca'
+    'footer footer footer footer footer footer footer footer'
+    gap: 10px;
+    background-color: #1d3557;
+    padding: 10px;
+
+
+}

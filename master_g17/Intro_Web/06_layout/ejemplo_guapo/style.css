@@ -1,0 +1,62 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+
+nav{
+    background-color: black;
+}
+
+.barra-nav{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.boobafet{
+
+}
+
+#info{
+    display: flex;
+}
+
+.r2d2{
+    display: flex;
+    float: right;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+
+}
+
+article{
+    display: flex;
+    padding: 20px;
+    width: 50%;
+    float: right;
+    background-color: #ccc;
+    text-align: justify;
+}
+
+.stoorm{
+    width: 100%;
+    border-radius: 0%;
+}
+
+footer{
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+
+}

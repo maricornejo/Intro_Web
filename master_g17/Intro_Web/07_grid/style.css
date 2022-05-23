@@ -1,0 +1,92 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin: 0%;
+}
+
+.grid-container{
+    margin: 15px;
+    display: grid;
+    /*Utilizando unidad auto */
+        /* grid-template-columns: auto auto auto; */
+    /*Utilizando unidad fr */
+    grid-template-columns: 3fr 2fr 3fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+    background-color: #c16e70;
+}
+
+.grid-item{
+    background-color: #DC9E82;
+    border: 2px; solid #DC9E82;;
+    padding: 20%;
+    font-size: 30px;
+    text-align: center;
+    color:antiquewhite;
+}
+
+.grid-container-2{
+    margin: 15px;
+    display: grid;
+    height: 500px;
+    /*Utilizando unidad auto */
+        /* grid-template-columns: auto auto auto; */
+    /*Utilizando unidad fr */
+    grid-template-columns: 3fr 2fr 3fr;
+    /*Mismo espacio entre filas */
+    gap: 10px;
+    /*Mismo espacio entre columnas o se puede usar grid-row-gap */
+    row-gap: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+    background-color: #c16e70;
+    /* Justifica el contenido de nuestro container (items) */
+    /* Izquierda */
+    /*justify-items: start;*/
+    /* Derecha */
+    /*justify-items: end;*/
+     /* Extendido */
+    /*justify-items: stretch;*/
+   /* Alinea el contenido de container (vertical) */
+   /*arriba*/
+   align-items: flex-start;
+   /*Alinea y justifica en la misma línea de código*/
+   place-content: center center;
+} 
+
+.grid-item-2{
+    background-color: #d1b3c4;
+    border: 2px; solid #735D78;;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.grid-container-3{
+    margin: 15px;
+    display: grid;
+    height: 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    /*padding: 20px; */
+    background-color: #f4a261;
+}
+
+.grid-item-3{
+    background-color: #e9c46a;
+    border: 2px; solid  #e9c46a;
+    padding: 20%;
+    font-size: 30px;
+    text-align: center;
+    color:antiquewhite;
+   grid-column-start: 1;
+    grid-column-end: 3;
+    /*Justificando contenido*/
+        /*justify-self: end;*/
+    /*Alineando contenido*/
+       /*align-self: flex-end;*/
+    /*Justificando y alineamos en la misma code line*/
+    place-self: center flex-end;
+}
